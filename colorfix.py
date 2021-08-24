@@ -47,6 +47,7 @@ def main():
 					do_the_write(i)
 			print("All done!")
 		elif sys.argv[1] in elenas_files:
+				downloader(sys.argv[1])
 				do_the_write(sys.argv[1])
 				print("Done! Converted: " + sys.argv[1])
 	except:
