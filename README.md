@@ -2,7 +2,7 @@
 So I fell in love with some of "https://github.com/elenapan" colorthemes for terminals, and this scripts convert them to work with termux on an android phone
 
 Dependencies:
-pip3 install PyGithub
+pip3 install PyGithub requests
 
 This is made for Python3 and you will need to create a github acces token and put that in the script for this to work.
 
