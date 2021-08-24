@@ -19,7 +19,10 @@ def move():
 	rescan = os.listdir('.')
 	for i in rescan:
 		if i.endswith('.properties'):
-			os.rename(os.getcwd() + '/' + i, '/data/data/com.termux/files/usr/share/termux-style/colors/' + i)
+			try:
+				os.rename(os.getcwd() + '/' + i, '/data/data/com.termux/files/usr/share/termux-style/colors/' + i)
+			except FileNotFoundError:
+				print("Termux colors folder wasn't found, the files could not be moved from current folder")
 
 # This will download the specified files from the repo
 def downloader(file):
